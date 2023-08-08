@@ -84,9 +84,9 @@ class SearchDialog(QDialog):
         for item in items:
             print(item)
             main_window.table.item(item.row(), 1).setSelected(True)
-
         cursor.close()
         connection.close()
+
 
 class InsertDialog(QDialog):
     def __init__(self):
